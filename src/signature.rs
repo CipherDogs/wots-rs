@@ -13,7 +13,7 @@ impl Signature {
 
 /// Construct a `Signature` from a bytes.
 impl From<[[u8; 32]; 32]> for Signature {
-    fn from(key: [[u8; 32]; 32]) -> Self {
-        Self(key)
+    fn from(value: [[u8; 32]; 32]) -> Self {
+        Self(value)
     }
 }
